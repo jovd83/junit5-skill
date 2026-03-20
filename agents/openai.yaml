@@ -1,0 +1,4 @@
+interface:
+  display_name: "JUnit 5 Skill Family"
+  short_description: "Route JUnit 5 work to the right skill, guide, or workflow"
+  default_prompt: "Use $junit5-skill to route this JUnit 5 task to the right subskill for implementation, analysis, migration, CI, documentation, extensions, or reporting."

@@ -1,0 +1,22 @@
+---
+name: junit5-reporting-stakeholder
+description: Use when Codex needs to summarize JUnit 5 test execution results for non-technical stakeholders in clear business-oriented language instead of raw runner output.
+---
+
+# JUnit 5 Stakeholder Reporting
+
+## 1. Collect the Outcome
+
+1. Identify what ran, what passed, what failed, and what was skipped.
+2. Identify whether the failures block release confidence or are isolated.
+
+## 2. Translate into Stakeholder Language
+
+1. Explain business impact, not stack traces.
+2. Group failures by user-facing risk.
+3. Call out confidence level and next action clearly.
+
+## 3. Troubleshooting
+
+1. Problem: The raw output is noisy.
+   Fix: Collapse it into impacted capability, confidence, and next action.
