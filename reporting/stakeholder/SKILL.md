@@ -1,6 +1,9 @@
 ---
 name: junit5-reporting-stakeholder
 description: Use when Codex needs to summarize JUnit 5 test execution results for non-technical stakeholders in clear business-oriented language instead of raw runner output.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Stakeholder Reporting

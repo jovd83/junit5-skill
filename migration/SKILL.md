@@ -1,6 +1,9 @@
 ---
 name: junit5-migration
 description: Use when Codex needs to migrate tests from JUnit 3 or JUnit 4 to JUnit 5, replace runners and rules, reduce Vintage usage, and preserve behavioral compatibility during modernization.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Migration

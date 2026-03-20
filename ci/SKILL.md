@@ -1,6 +1,9 @@
 ---
 name: junit5-ci
 description: Use when Codex needs to run JUnit 5 tests through Maven, Gradle, or the Console Launcher, configure CI pipelines, manage tags and reports, or debug environment-specific execution issues.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 CI

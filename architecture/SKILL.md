@@ -1,6 +1,9 @@
 ---
 name: junit5-architecture
 description: Use when Codex needs to shape or refactor JUnit 5 suite architecture, test package structure, naming, fixture ownership, reuse patterns, or boundaries between component, integration, and service tests.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Architecture

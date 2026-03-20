@@ -1,6 +1,9 @@
 ---
 name: junit5-installer-intellij-junie
 description: Use when Codex needs to help configure IntelliJ IDEA for JUnit 5 development, execution, debugging, and Junie-style workflows in a JVM project.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 IntelliJ Setup

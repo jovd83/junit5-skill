@@ -1,6 +1,9 @@
 ---
 name: junit5-core
 description: Use when Codex needs to create, run, debug, evaluate, refactor, or correct JUnit 5 tests across component, integration, slice, repository, service, smoke, or regression scenarios.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Core

@@ -1,6 +1,9 @@
 ---
 name: junit5-extensions
 description: Use when Codex needs to create, review, or debug JUnit 5 extensions, custom annotations, lifecycle callbacks, parameter resolvers, or reusable execution hooks.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Extensions

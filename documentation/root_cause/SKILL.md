@@ -1,6 +1,9 @@
 ---
 name: junit5-documentation-root-cause
 description: Use when Codex needs to analyze a failing JUnit 5 test run, identify the most likely root cause, and produce a developer-focused diagnosis with concrete next fixes.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Root Cause Analysis

@@ -1,6 +1,9 @@
 ---
 name: junit5-analysis
 description: Use when Codex needs to derive JUnit 5 test scenarios from requirements, code, or existing test case definitions such as TDD, BDD, and plain-text specifications.
+metadata:
+  author: jovd83
+  version: "1.0.0"
 ---
 
 # JUnit 5 Analysis
