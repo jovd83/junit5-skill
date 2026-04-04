@@ -1,5 +1,10 @@
 # JUnit 5 Skill Family
 
+[![Validate Skills](https://github.com/jovd83/junit5-skill/actions/workflows/validate.yml/badge.svg)](https://github.com/jovd83/junit5-skill/actions/workflows/validate.yml)
+[![version](https://img.shields.io/badge/version-1.0-blue)](CHANGELOG.md)
+[![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/jovd83)
+
 Battle-tested JUnit 5 skill guides for creating, running, evaluating, correcting, migrating, documenting, and operationalizing JVM tests. This repository packages a full Agent Skills family for component tests, integration tests, repository tests, slice tests, service tests, regression coverage, migration work, CI flows, and extension authoring.
 
 ## What are Agent Skills?
