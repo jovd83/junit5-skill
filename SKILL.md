@@ -67,6 +67,16 @@ Use this root skill as the package entrypoint for general JUnit 5 requests. Rout
 - Read [references/version-compatibility.md](references/version-compatibility.md) when build or dependency versions are unclear.
 - Read [references/release-checklist.md](references/release-checklist.md) before publishing or cutting a release.
 
+## Gotchas
+
+- **Static Lifecycle**: `@BeforeAll` and `@AfterAll` must be `static` by default. Use `@TestInstance(Lifecycle.PER_CLASS)` only when non-static lifecycle is explicitly required.
+- **Assertion Order**: Always use `assertEquals(expected, actual)`. Swapping them makes failure reports misleading (e.g., "Expected: 5, Actual: 10" when the actual value was 5).
+- **Assertion Masking**: Sequential assertions stop at the first failure. Use `assertAll()` to execute and report on multiple independent assertions within a single test.
+- **Visibility**: JUnit 5 test classes and methods should be package-private (no `public` modifier) unless they must be accessed from other packages.
+- **Import Conflicts**: Ensure you import from `org.junit.jupiter.api` rather than the old `org.junit` (JUnit 4) package. Mixing them leads to tests that "pass" because they never ran.
+- **Mocking Leakage**: When mocking static methods or constructors (e.g., with Mockito), always use a try-with-resources block or an `@AfterEach` cleanup to prevent state leakage.
+- **Tag Selection**: Using `@Tag` without corresponding build-tool configuration (Maven/Gradle) means the tests will run even when you think you've excluded them.
+
 ## Official References
 
 - JUnit overview: https://docs.junit.org/5.14.3/overview.html
