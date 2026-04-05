@@ -30,13 +30,14 @@ metadata:
 
 1. Prefer JUnit Jupiter annotations and assertions for new code.
 2. Prefer `@ParameterizedTest` over duplicated cases when the input matrix is systematic.
-3. Use `@Nested` when scenario hierarchy clarifies behavior.
-4. Use test data builders, fakes, or fixtures to reduce setup noise.
-5. Keep one behavioral reason per test.
-6. Keep assertions semantic and stable.
-7. Read [references/junit5-authoring.md](references/junit5-authoring.md) for detailed authoring patterns.
-8. Read [references/lifecycle-tags-and-parallelism.md](references/lifecycle-tags-and-parallelism.md) before changing lifecycle, tags, ordering, or parallel execution.
-9. Read [references/assertion-quality-and-smells.md](references/assertion-quality-and-smells.md) when the suite has weak, noisy, or brittle assertions.
+3. Prefer soft assertions (`assertAll()`) to find and fix multiple errors in one test execution cycle.
+4. Use `@Nested` when scenario hierarchy clarifies behavior.
+5. Use test data builders, fakes, or fixtures to reduce setup noise.
+6. Keep one behavioral reason per test.
+7. Keep assertions semantic and stable.
+8. Read [references/junit5-authoring.md](references/junit5-authoring.md) for detailed authoring patterns.
+9. Read [references/lifecycle-tags-and-parallelism.md](references/lifecycle-tags-and-parallelism.md) before changing lifecycle, tags, ordering, or parallel execution.
+10. Read [references/assertion-quality-and-smells.md](references/assertion-quality-and-smells.md) when the suite has weak, noisy, or brittle assertions.
 
 ## 4. Run and Debug
 
