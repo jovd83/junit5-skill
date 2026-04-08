@@ -4,6 +4,14 @@ description: Use when Codex needs to shape or refactor JUnit 5 suite architectur
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: test-architecture, junit5-architecture
+  dispatcher-accepted-intents: design_junit_test_architecture
+  dispatcher-input-artifacts: repo_context, suite_structure, reuse_patterns
+  dispatcher-output-artifacts: architecture_guidance, suite_design
+  dispatcher-stack-tags: junit5, architecture, jvm
+  dispatcher-risk: medium
+  dispatcher-writes-files: false
 ---
 
 # JUnit 5 Architecture

@@ -4,6 +4,14 @@ description: Use when Codex needs to run JUnit 5 tests through Maven, Gradle, or
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: ci-configuration, junit5-ci
+  dispatcher-accepted-intents: configure_junit_ci, optimize_junit_execution
+  dispatcher-input-artifacts: repo_context, ci_pipeline, build_files
+  dispatcher-output-artifacts: ci_guidance, execution_plan, pipeline_update
+  dispatcher-stack-tags: junit5, ci, jvm
+  dispatcher-risk: medium
+  dispatcher-writes-files: true
 ---
 
 # JUnit 5 CI

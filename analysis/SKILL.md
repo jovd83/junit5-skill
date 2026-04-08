@@ -4,6 +4,14 @@ description: Use when Codex needs to derive JUnit 5 test scenarios from requirem
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: requirements-analysis, junit5-requirements-analysis
+  dispatcher-accepted-intents: analyze_junit_requirements
+  dispatcher-input-artifacts: requirements, target_code, repo_context
+  dispatcher-output-artifacts: analysis_baseline, test_candidates, open_questions
+  dispatcher-stack-tags: junit5, analysis, jvm
+  dispatcher-risk: low
+  dispatcher-writes-files: false
 ---
 
 # JUnit 5 Analysis

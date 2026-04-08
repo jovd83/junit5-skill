@@ -4,6 +4,14 @@ description: Use when Codex needs to migrate tests from JUnit 3 or JUnit 4 to JU
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: framework-migration, junit5-migration
+  dispatcher-accepted-intents: migrate_to_junit5
+  dispatcher-input-artifacts: legacy_test_suite, repo_context, migration_scope
+  dispatcher-output-artifacts: migration_plan, migrated_tests, compatibility_notes
+  dispatcher-stack-tags: junit5, migration, jvm
+  dispatcher-risk: high
+  dispatcher-writes-files: true
 ---
 
 # JUnit 5 Migration

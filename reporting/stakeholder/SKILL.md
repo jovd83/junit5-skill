@@ -4,6 +4,14 @@ description: Use when Codex needs to summarize JUnit 5 test execution results fo
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: stakeholder-reporting, junit5-stakeholder-reporting
+  dispatcher-accepted-intents: summarize_junit_results
+  dispatcher-input-artifacts: execution_results, tested_scope, release_context
+  dispatcher-output-artifacts: stakeholder_summary, release_health_report
+  dispatcher-stack-tags: junit5, reporting, stakeholder
+  dispatcher-risk: low
+  dispatcher-writes-files: false
 ---
 
 # JUnit 5 Stakeholder Reporting

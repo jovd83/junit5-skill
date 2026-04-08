@@ -4,6 +4,14 @@ description: Use when Codex needs to analyze a failing JUnit 5 test run, identif
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: failure-analysis, junit5-root-cause
+  dispatcher-accepted-intents: analyze_junit_test_failure
+  dispatcher-input-artifacts: failure_output, repo_context, test_artifacts
+  dispatcher-output-artifacts: root_cause_report, failure_summary
+  dispatcher-stack-tags: junit5, diagnostics, failure-analysis
+  dispatcher-risk: low
+  dispatcher-writes-files: false
 ---
 
 # JUnit 5 Root Cause Analysis

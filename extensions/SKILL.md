@@ -4,6 +4,14 @@ description: Use when Codex needs to create, review, or debug JUnit 5 extensions
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: extensions, junit5-extensions
+  dispatcher-accepted-intents: implement_junit_extensions
+  dispatcher-input-artifacts: repo_context, extension_requirements, target_suite
+  dispatcher-output-artifacts: extension_design, extension_code, usage_guidance
+  dispatcher-stack-tags: junit5, extensions, jvm
+  dispatcher-risk: medium
+  dispatcher-writes-files: true
 ---
 
 # JUnit 5 Extensions

@@ -4,6 +4,14 @@ description: Use when Codex needs to help configure Visual Studio Code for JUnit
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: editor-setup, junit5-editor-setup
+  dispatcher-accepted-intents: setup_junit_editor
+  dispatcher-input-artifacts: editor_choice, repo_context, local_environment
+  dispatcher-output-artifacts: editor_setup_steps, configuration_guidance
+  dispatcher-stack-tags: junit5, setup, editor
+  dispatcher-risk: low
+  dispatcher-writes-files: false
 ---
 
 # JUnit 5 VS Code Setup

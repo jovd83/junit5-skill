@@ -4,6 +4,14 @@ description: Use when Codex needs to create, run, debug, evaluate, refactor, or 
 metadata:
   author: jovd83
   version: "1.0.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: unit-testing, junit5-core, junit5-implementation
+  dispatcher-accepted-intents: implement_unit_tests, debug_unit_tests, review_unit_tests
+  dispatcher-input-artifacts: repo_context, target_code, requirements, existing_junit_suite
+  dispatcher-output-artifacts: junit_test, implementation_guidance, fix_plan
+  dispatcher-stack-tags: junit5, implementation, jvm
+  dispatcher-risk: high
+  dispatcher-writes-files: true
 ---
 
 # JUnit 5 Core
