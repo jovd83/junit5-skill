@@ -4,6 +4,14 @@ description: Use when Codex needs to create, run, evaluate, debug, correct, mode
 metadata:
   author: jovd83
   version: "1.0"
+  dispatcher-category: testing
+  dispatcher-capabilities: unit-testing, junit5, test-architecture, test-execution
+  dispatcher-accepted-intents: implement_unit_tests, analyze_junit_requirements, diagnose_junit_failures, configure_junit_ci
+  dispatcher-input-artifacts: repo_context, target_code, requirements, existing_junit_suite, failure_output
+  dispatcher-output-artifacts: junit_test, analysis_baseline, root_cause_report, ci_guidance, routing_request
+  dispatcher-stack-tags: junit5, jvm, unit-testing
+  dispatcher-risk: medium
+  dispatcher-writes-files: true
 ---
 
 # JUnit 5 Skill Family
@@ -22,6 +30,15 @@ Use this root skill as the package entrypoint for general JUnit 5 requests. Rout
 - Do not add JUnit 4 APIs in new code unless the task is explicitly about migration.
 - Do not silently convert unstable integration tests into mocked unit tests just to make them pass.
 - Do not treat JUnit 6 branding as permission to generate non-JUnit-5-compatible patterns for a repo that still targets JUnit 5.
+
+## Dispatcher Integration
+
+Use `skill-dispatcher` as the primary integration layer whenever this package needs help from another skill or when a broader orchestrator is deciding whether JUnit 5 is the right execution layer.
+
+- Prefer dispatcher-led routing by intent rather than naming sibling skills outside this package.
+- Prefer the repository's existing JVM test stack over introducing JUnit 5 into a repo that already standardizes on something else.
+- Treat sibling skill names in this file as package-local guidance, not as a replacement for global dispatcher routing.
+- Keep shared-memory usage limited to stable cross-project policy supplied externally, never task-local routing state.
 
 ## Routing Map
 
