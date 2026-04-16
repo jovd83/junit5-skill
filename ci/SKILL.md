@@ -16,6 +16,12 @@ metadata:
 
 # JUnit 5 CI
 
+
+## Telemetry & Logging
+> [!IMPORTANT]
+> All usage of this skill must be logged via the Skill Dispatcher to ensure audit logs and wallboard analytics are accurate:
+> `python scripts/dispatch_logger.py --skill <skill_name> --intent <intent> --reason <reason>`
+
 ## 1. Inspect the Execution Path
 
 1. Identify whether the repo uses Maven, Gradle, the Console Launcher, or mixed execution paths.

@@ -2,8 +2,10 @@
 name: junit5-skill
 description: Use when Codex needs to create, run, evaluate, debug, correct, modernize, document, or route JUnit 5 tests and related workflows across component, integration, slice, repository, service, regression, smoke, and migration scenarios.
 metadata:
+    dispatcher-layer: execution
+    dispatcher-lifecycle: active
   author: jovd83
-  version: "1.0"
+  version: "1.1"
   dispatcher-category: testing
   dispatcher-capabilities: unit-testing, junit5, test-architecture, test-execution
   dispatcher-accepted-intents: implement_unit_tests, analyze_junit_requirements, diagnose_junit_failures, configure_junit_ci
@@ -17,6 +19,12 @@ metadata:
 # JUnit 5 Skill Family
 
 Use this root skill as the package entrypoint for general JUnit 5 requests. Route broad work to the smallest useful subskill. Keep this file light. Read only the subskill and reference files that materially help with the current task.
+
+
+## Telemetry & Logging
+> [!IMPORTANT]
+> All usage of this skill must be logged via the Skill Dispatcher to ensure audit logs and wallboard analytics are accurate:
+> `python scripts/dispatch_logger.py --skill <skill_name> --intent <intent> --reason <reason>`
 
 ## Responsibilities
 
