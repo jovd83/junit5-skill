@@ -3,7 +3,7 @@ name: junit5-documentation-tests
 description: Use when Codex needs to document JUnit 5 automation code with clear scenario intent, suite purpose, traceability, or maintainable human-readable explanations.
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-category: testing
   dispatcher-capabilities: automation-documentation, junit5-test-documentation
   dispatcher-accepted-intents: document_junit_tests

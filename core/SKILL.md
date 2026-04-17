@@ -3,7 +3,7 @@ name: junit5-core
 description: Use when Codex needs to create, run, debug, evaluate, refactor, or correct JUnit 5 tests across component, integration, slice, repository, service, smoke, or regression scenarios.
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-category: testing
   dispatcher-capabilities: unit-testing, junit5-core, junit5-implementation
   dispatcher-accepted-intents: implement_unit_tests, debug_unit_tests, review_unit_tests

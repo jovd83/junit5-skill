@@ -3,7 +3,7 @@ name: junit5-ci
 description: Use when Codex needs to run JUnit 5 tests through Maven, Gradle, or the Console Launcher, configure CI pipelines, manage tags and reports, or debug environment-specific execution issues.
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-category: testing
   dispatcher-capabilities: ci-configuration, junit5-ci
   dispatcher-accepted-intents: configure_junit_ci, optimize_junit_execution

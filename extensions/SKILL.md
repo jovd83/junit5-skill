@@ -3,7 +3,7 @@ name: junit5-extensions
 description: Use when Codex needs to create, review, or debug JUnit 5 extensions, custom annotations, lifecycle callbacks, parameter resolvers, or reusable execution hooks.
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-category: testing
   dispatcher-capabilities: extensions, junit5-extensions
   dispatcher-accepted-intents: implement_junit_extensions

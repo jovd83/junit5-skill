@@ -2,8 +2,8 @@
 name: junit5-skill
 description: Use when Codex needs to create, run, evaluate, debug, correct, modernize, document, or route JUnit 5 tests and related workflows across component, integration, slice, repository, service, regression, smoke, and migration scenarios.
 metadata:
-    dispatcher-layer: execution
-    dispatcher-lifecycle: active
+  dispatcher-layer: execution
+  dispatcher-lifecycle: active
   author: jovd83
   version: "1.1"
   dispatcher-category: testing

@@ -3,7 +3,7 @@ name: junit5-installer-vscode-codex
 description: Use when Codex needs to help configure Visual Studio Code for JUnit 5 development, execution, debugging, and Codex-driven workflows in a JVM project.
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-category: testing
   dispatcher-capabilities: editor-setup, junit5-editor-setup
   dispatcher-accepted-intents: setup_junit_editor

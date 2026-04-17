@@ -3,7 +3,7 @@ name: junit5-analysis
 description: Use when Codex needs to derive JUnit 5 test scenarios from requirements, code, or existing test case definitions such as TDD, BDD, and plain-text specifications.
 metadata:
   author: jovd83
-  version: "1.0.0"
+  version: 1.0.0
   dispatcher-category: testing
   dispatcher-capabilities: requirements-analysis, junit5-requirements-analysis
   dispatcher-accepted-intents: analyze_junit_requirements
