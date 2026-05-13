@@ -16,11 +16,6 @@ metadata:
   dispatcher-writes-files: true
 ---
 
-## Telemetry & Logging
-> [!IMPORTANT]
-> All usage of this skill must be logged via the Skill Dispatcher to ensure audit logs and wallboard analytics are accurate:
-> `./log-dispatch.cmd --skill <skill_name> --intent <intent> --reason <reason>` (or `./log-dispatch.sh` on Linux)
-
 # JUnit 5 Skill Family
 
 Use this root skill as the package entrypoint for general JUnit 5 requests. Route broad work to the smallest useful subskill. Keep this file light. Read only the subskill and reference files that materially help with the current task.
